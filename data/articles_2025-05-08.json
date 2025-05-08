@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Dubai's Lune raises $1.5 million seed to supercharge financial apps with data enrichment and money management tools",
+    "link": "https://www.menabytes.com/lune-seed/",
+    "category": "Investments",
+    "date": "May 13, 2024",
+    "content": [
+      "Dubai-based data analytics startup Lune has raised $1.5 million in a seed round from Dubai Future District Fund (DFDF), Plus Venture Capital, Reach International, and Judah Ventures, it announced in a statement on Thursday. The round was also joined by a few family offices and angel investors.",
+      "Founded in 2020 by Helal Tariq Lootah and Alexandre Soued, Lune enables banks, fintechs, and financial institutions to turn the transaction data of their customers into useful insights for them. It offers its plug-and-play solutions through an API, allowing its clients to improve the user experience of their financial products.",
+      "The transaction data enrichment solution by Lune automatically categorizes transactions of customers into categories and sub-categories, identifies the brand name, and adds the logo of the brand, to make the data easier to navigate for users.",
+      "An example of this would be a neobank that uses Lune by plugging its solution into their app through an API. The customers of this neobank would see the app automatically categorize, sub-categorize, and add brand logos to each transaction, as shown in the screenshot below. From non-visual data with no categorization, it is turned into visual data with every transaction getting categorized.",
+      "The startup also allows its clients to add money management tools to their app, enabling their customers to track their spending, and budgets, and set financial goals.",
+      "In addition to these customer-facing tools, the startup also allows financial institutions to learn useful information and patterns by breaking down their customer data into insights. The insights can be used for credit risk analysis and trend forecasting.",
+      "According to a statement by Lune, the startup currently serves clients in the United Arab Emirates, Saudi Arabia, and Bahrain. It is now planning to expand its offerings to Oman, Qatar, Kuwait, and Egypt, \"An upcoming partnership with a major GCC payments company is poised to significantly amplify Lune's reach and impact within the region,\" added the statement without sharing specific details about the partnership.",
+      "Helal Tariq Lootah, co-founder and co-CEO of Lune, said, \"\"We are thrilled to have secured this investment. This funding will propel our regional expansion, product development, and mission to revolutionize the financial services landscape. We are committed to providing our clients with the most advanced and secure data-driven solutions, while simultaneously promoting a sustainable financial future.\"",
+      "Amer Fatayer, the Managing Director for Investments at Dubai Future District Fund, said, \"We are constantly excited to see what Lune can do next. Since our first investment in the company's pre-seed round, we have been highly impressed by the team's execution. Lune's solution is enabling traditional banks and fintechs to make data-driven decisions and increase personalized engagement with their end users. Having won marquee customers across the GCC with a proven value proposition, Lune is well-placed to be the regional leader in the financial data infrastructure space.\"",
+      "Lune previously raised $850,000 in a pre-seed round from Dubai Future District Fund (DFDF) and Flat6Labs in 2022."
+    ],
+    "image_url": "https://www.menabytes.com/wp-content/uploads/2024/05/Lune-team.jpg"
+  },
+  {
+    "title": "Egypt's Money Fellows raises $13 million to expand digital savings platform across Africa",
+    "link": "https://www.menabytes.com/money-fellows-13-million/",
+    "category": "Investments",
+    "date": "May 6, 2025",
+    "content": [
+      "Cairo-based fintech Money Fellows has raised $13 million in a strategic funding round co-led by Al Mada Ventures and DPI Venture Capital, it announced in a statement on Monday. The round was also joined by existing investors Algebra Ventures, Partech, Sawari Ventures, and CommerzVentures.",
+      "Founded in 2016 by Ahmed Wadi, Money Fellows is a digital platform that digitizes the concept of money circles (known as gam'eya in Egypt and other Arab countries), which are popular in many parts of the world. The platform enables users to access interest-free credit and save money through a rotating savings and credit association (ROSCA) model.",
+      "In a traditional ROSCA, a group of people contribute a fixed amount of money to a pool on a regular basis, and each member takes the whole sum once during the life cycle of the ROSCA. Money Fellows has digitized this concept, making it more accessible and secure for users. The startup also offers different financial services, including buy now pay later, and peer-to-peer lending.",
+      "The startup plans to use the latest funds to expand its operations across Africa, starting with Nigeria and Kenya, it said in a statement. It also plans to introduce new financial services and products to meet the growing needs of its users.",
+      "\"We are thrilled to welcome Al Mada Ventures and DPI Venture Capital as new investors, and to have the continued support of our existing investors. This funding will enable us to accelerate our growth and bring our innovative financial solutions to more users across Africa,\" said Ahmed Wadi, founder and CEO of Money Fellows.",
+      "\"Our mission is to provide accessible and affordable financial services to the unbanked and underbanked populations, and this investment brings us one step closer to achieving that goal,\" he added.",
+      "Hatim Ben Ahmed, Managing Partner at Al Mada Ventures, said, \"Money Fellows has built a remarkable platform that addresses a critical need in the market. We are excited to support their expansion into new markets and their mission to provide accessible financial services to underserved populations.\"",
+      "Money Fellows claims to have over 1 million registered users on its platform. It has disbursed over $300 million in funds since its inception, according to the statement.",
+      "The startup had previously raised $31 million in its Series B round in 2022."
+    ],
+    "image_url": "https://www.menabytes.com/wp-content/uploads/2022/10/Money-Fellows-Ahmed-Wadi.jpg"
+  }
+] 
