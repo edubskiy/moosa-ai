@@ -13,9 +13,9 @@ articles = scraper.run()
 
 #### Methods
 
-- `run()`: Запускает процесс скрапинга и возвращает список статей
-- `parse_article(url)`: Парсит отдельную статью по URL
-- `extract_company_info(article)`: Извлекает информацию о компании из статьи
+- `run()`: Starts the scraping process and returns a list of articles
+- `parse_article(url)`: Parses a single article by URL
+- `extract_company_info(article)`: Extracts company information from an article
 
 ### Content Generator
 
@@ -28,14 +28,14 @@ content = generator.generate(article, platform="telegram")
 
 #### Methods
 
-- `generate(article, platform)`: Генерирует контент для указанной платформы
-- `format_content(content, style)`: Форматирует контент согласно стилю
-- `add_hashtags(content, platform)`: Добавляет релевантные хэштеги
+- `generate(article, platform)`: Generates content for the specified platform
+- `format_content(content, style)`: Formats content according to style
+- `add_hashtags(content, platform)`: Adds relevant hashtags
 
 ### Scheduler
 
 ```python
-from src.core.scheduler import Scheduler
+from src/core/scheduler import Scheduler
 
 scheduler = Scheduler()
 scheduler.schedule_job(time="09:00")
@@ -43,9 +43,9 @@ scheduler.schedule_job(time="09:00")
 
 #### Methods
 
-- `schedule_job(time)`: Планирует ежедневное выполнение задачи
-- `run_job()`: Выполняет запланированную задачу
-- `stop()`: Останавливает планировщик
+- `schedule_job(time)`: Schedules a daily job
+- `run_job()`: Runs the scheduled job
+- `stop()`: Stops the scheduler
 
 ## Storage
 
@@ -60,11 +60,11 @@ tracker.save_article(article)
 
 #### Methods
 
-- `save_article(article)`: Сохраняет статью в Excel
-- `save_content(content)`: Сохраняет сгенерированный контент
-- `get_article(article_id)`: Получает статью по ID
-- `get_content(content_id)`: Получает контент по ID
-- `export_content(content_id, path)`: Экспортирует контент в файл
+- `save_article(article)`: Saves an article to Excel
+- `save_content(content)`: Saves generated content
+- `get_article(article_id)`: Gets an article by ID
+- `get_content(content_id)`: Gets content by ID
+- `export_content(content_id, path)`: Exports content to a file
 
 ### Google Sheets Tracker
 
@@ -77,11 +77,11 @@ tracker.save_article(article)
 
 #### Methods
 
-- `save_article(article)`: Сохраняет статью в Google Sheets
-- `save_content(content)`: Сохраняет сгенерированный контент
-- `get_article(article_id)`: Получает статью по ID
-- `get_content(content_id)`: Получает контент по ID
-- `export_content(content_id, path)`: Экспортирует контент в файл
+- `save_article(article)`: Saves an article to Google Sheets
+- `save_content(content)`: Saves generated content
+- `get_article(article_id)`: Gets an article by ID
+- `get_content(content_id)`: Gets content by ID
+- `export_content(content_id, path)`: Exports content to a file
 
 ## Content Generation
 
@@ -96,9 +96,9 @@ script = generator.generate(article)
 
 #### Methods
 
-- `generate(article)`: Генерирует скрипт для Reels
-- `format_script(script)`: Форматирует скрипт
-- `add_visual_suggestions(script)`: Добавляет визуальные подсказки
+- `generate(article)`: Generates a script for Reels
+- `format_script(script)`: Formats the script
+- `add_visual_suggestions(script)`: Adds visual suggestions
 
 ### Style Configuration
 
@@ -111,9 +111,9 @@ style = config.get_style("expert_analyst")
 
 #### Methods
 
-- `get_style(style_name)`: Получает настройки стиля
-- `update_style(style_name, settings)`: Обновляет настройки стиля
-- `get_platform_style(platform)`: Получает стиль для платформы
+- `get_style(style_name)`: Gets style settings
+- `update_style(style_name, settings)`: Updates style settings
+- `get_platform_style(platform)`: Gets style for a platform
 
 ## Utils
 
@@ -128,9 +128,9 @@ is_processed = tracker.is_processed(article_id)
 
 #### Methods
 
-- `is_processed(article_id)`: Проверяет, обработана ли статья
-- `mark_as_processed(article_id)`: Отмечает статью как обработанную
-- `get_processing_history(article_id)`: Получает историю обработки
+- `is_processed(article_id)`: Checks if an article is processed
+- `mark_as_processed(article_id)`: Marks an article as processed
+- `get_processing_history(article_id)`: Gets processing history
 
 ## Data Models
 
@@ -191,16 +191,16 @@ class Reel:
 
 ## Error Handling
 
-Все компоненты используют стандартные исключения Python:
+All components use standard Python exceptions:
 
-- `ValueError`: Некорректные входные данные
-- `ConnectionError`: Проблемы с подключением
-- `PermissionError`: Проблемы с доступом к файлам
-- `KeyError`: Отсутствующие ключи в конфигурации
+- `ValueError`: Invalid input
+- `ConnectionError`: Connection issues
+- `PermissionError`: File access issues
+- `KeyError`: Missing configuration keys
 
 ## Logging
 
-Все компоненты используют стандартный модуль logging:
+All components use the standard logging module:
 
 ```python
 import logging
@@ -210,7 +210,7 @@ logger.info("Message")
 logger.error("Error message")
 ```
 
-Логи сохраняются в директории `logs/` с соответствующими префиксами:
+Logs are saved in the `logs/` directory with appropriate prefixes:
 - `scraper.log`
 - `generator.log`
 - `scheduler.log`

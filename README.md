@@ -1,125 +1,125 @@
 # MOOSA AI
 
-Платформа для автоматизированного создания контента о стартапах в стиле Евгения Дубского.
+A platform for automated content creation about startups in the style of Evgeniy Dubskiy.
 
-## Особенности
+## Features
 
-- 🤖 AI-powered генерация контента
-- 📊 Аналитический подход к контенту
-- 📱 Поддержка множества платформ (Telegram, LinkedIn, Instagram)
-- 🎥 Генерация скриптов для Instagram Reels
-- 📅 Планирование публикаций
-- 💾 Гибкое хранение (Excel/Google Sheets)
-- 📈 Отслеживание метрик и аналитика
+- 🤖 AI-powered content generation
+- 📊 Analytical approach to content
+- 📱 Multi-platform support (Telegram, LinkedIn, Instagram)
+- 🎥 Script generation for Instagram Reels
+- 📅 Content scheduling
+- 💾 Flexible storage (Excel/Google Sheets)
+- 📈 Metrics tracking and analytics
 
-## Структура проекта
+## Project Structure
 
 ```
 moosa-ai/
-├── src/                    # Исходный код
-│   ├── core/              # Основные компоненты
-│   ├── storage/           # Системы хранения
-│   ├── content/           # Генерация контента
-│   └── utils/             # Вспомогательные функции
-├── scripts/               # Скрипты для работы с данными
-├── templates/             # Шаблоны контента
-├── config/                # Конфигурационные файлы
-├── docs/                  # Документация
-├── tests/                 # Тесты
-├── data/                  # Данные
-├── media/                 # Медиафайлы
-├── output/                # Выходные файлы
-└── logs/                  # Логи
+├── src/                    # Source code
+│   ├── core/              # Core components
+│   ├── storage/           # Storage systems
+│   ├── content/           # Content generation
+│   └── utils/             # Utility functions
+├── scripts/               # Data scripts
+├── templates/             # Content templates
+├── config/                # Configuration files
+├── docs/                  # Documentation
+├── tests/                 # Tests
+├── data/                  # Data
+├── media/                 # Media files
+├── output/                # Output files
+└── logs/                  # Logs
 ```
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
 ```bash
 git clone https://github.com/edubskiy/moosa-ai.git
 cd moosa-ai
 ```
 
-2. Создайте виртуальное окружение:
+2. Create a virtual environment:
 ```bash
 python -m venv python_env
 source python_env/bin/activate  # Linux/Mac
-# или
+# or
 python_env\Scripts\activate  # Windows
 ```
 
-3. Установите зависимости:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Настройте переменные окружения:
+4. Set up environment variables:
 ```bash
 cp config/.env.example .env
-# Отредактируйте .env файл
+# Edit the .env file with your credentials
 ```
 
-## Использование
+## Usage
 
-Подробное руководство по использованию платформы находится в [docs/MANUAL.md](docs/MANUAL.md).
+See the detailed user manual in [docs/MANUAL.md](docs/MANUAL.md).
 
-### Быстрый старт
+### Quick Start
 
-1. Запуск полного процесса:
+1. Run the main process:
 ```bash
 python main.py
 ```
 
-2. Генерация контента для конкретной платформы:
+2. Generate content for a specific platform:
 ```bash
-python main.py --platform telegram --article-id <ID_статьи>
+python main.py --platform telegram --article-id <ARTICLE_ID>
 ```
 
-3. Генерация Reels:
+3. Generate Reels script:
 ```bash
-python main.py --generate-reel --article-id <ID_статьи>
+python main.py --generate-reel --article-id <ARTICLE_ID>
 ```
 
-## Хранение данных
+## Data Storage
 
-Платформа поддерживает два варианта хранения:
+The platform supports two storage options:
 
-1. **Excel** (по умолчанию)
-   - Локальное хранение
-   - Простая интеграция
-   - Подходит для небольших проектов
+1. **Excel** (default)
+   - Local storage
+   - Simple integration
+   - Suitable for small projects
 
 2. **Google Sheets**
-   - Облачное хранение
-   - Совместный доступ
-   - Подходит для командной работы
+   - Cloud storage
+   - Collaborative access
+   - Suitable for teams
 
-## Автоматизация
+## Automation
 
-Настройте автоматическую генерацию контента:
+Set up automatic content generation:
 ```bash
 python src/core/scheduler.py
 ```
 
-## Документация
+## Documentation
 
-- [Руководство пользователя](docs/MANUAL.md)
-- [API документация](docs/API.md)
-- [История изменений](CHANGELOG.md)
+- [User Manual](docs/MANUAL.md)
+- [API Documentation](docs/API.md)
+- [Changelog](CHANGELOG.md)
 
-## Вклад в проект
+## Contributing
 
-1. Форкните репозиторий
-2. Создайте ветку для новой функциональности
-3. Внесите изменения
-4. Создайте pull request
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Create a pull request
 
-## Лицензия
+## License
 
 MIT
 
-## Контакты
+## Contacts
 
-Евгений Дубской
+Evgeniy Dubskiy
 - Telegram: [@evgeniydubskiy](https://t.me/evgeniydubskiy)
 - LinkedIn: [evgeniydubskiy](https://linkedin.com/in/evgeniydubskiy) 

@@ -1,146 +1,146 @@
-# Руководство по использованию MOOSA AI
+# MOOSA AI User Manual
 
-## Введение
+## Introduction
 
-MOOSA AI - это система для автоматизированного создания контента о стартапах в стиле Евгения Дубского. Платформа использует искусственный интеллект для генерации уникального контента на основе новостей с menabytes.com.
+MOOSA AI is a system for automated content creation about startups in the style of Evgeniy Dubskiy. The platform uses artificial intelligence to generate unique content based on news from menabytes.com.
 
-## Особенности стиля Евгения Дубского
+## Style Features
 
-### Основные принципы:
-1. **Экспертность и аналитический подход**
-   - Фокус на конкретных метриках и данных
-   - Глубокий анализ бизнес-моделей
-   - Структурированное представление информации
+### Core Principles:
+1. **Expertise and Analytical Approach**
+   - Focus on specific metrics and data
+   - Deep analysis of business models
+   - Structured information presentation
 
-2. **Структура контента**
-   - Четкое разделение на введение, основную часть и заключение
-   - Использование подзаголовков для лучшей читаемости
-   - Включение конкретных примеров и кейсов
+2. **Content Structure**
+   - Clear separation into introduction, main part, and conclusion
+   - Use of subheadings for readability
+   - Inclusion of concrete examples and cases
 
-3. **Тональность**
-   - Профессиональная, но доступная
-   - Аналитическая, но не сухая
-   - Экспертная, но не надменная
+3. **Tone**
+   - Professional yet accessible
+   - Analytical but not dry
+   - Expert but not arrogant
 
-## Генерация контента
+## Content Generation
 
-### 1. Подготовка
+### 1. Preparation
 
-1. Установите зависимости:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Настройте переменные окружения:
+2. Set up environment variables:
 ```bash
 cp config/.env.example .env
-# Отредактируйте .env файл, добавив свой API ключ OpenAI
+# Edit the .env file and add your OpenAI API key
 ```
 
-### 2. Генерация постов
+### 2. Generating Posts
 
-#### Для Telegram:
+#### For Telegram:
 ```bash
-python main.py --platform telegram --article-id <ID_статьи>
+python main.py --platform telegram --article-id <ARTICLE_ID>
 ```
 
-#### Для LinkedIn:
+#### For LinkedIn:
 ```bash
-python main.py --platform linkedin --article-id <ID_статьи>
+python main.py --platform linkedin --article-id <ARTICLE_ID>
 ```
 
-#### Для Instagram:
+#### For Instagram:
 ```bash
-python main.py --platform instagram --article-id <ID_статьи>
+python main.py --platform instagram --article-id <ARTICLE_ID>
 ```
 
-### 3. Генерация Reels
+### 3. Generating Reels
 
 ```bash
-python main.py --generate-reel --article-id <ID_статьи>
+python main.py --generate-reel --article-id <ARTICLE_ID>
 ```
 
-## Настройка стиля
+## Style Configuration
 
-Стиль контента настраивается в файле `src/content/style_config.py`. Основные параметры:
+Content style is configured in `src/content/style_config.py`. Main parameters:
 
-1. **Тональность**
-   - expert_analyst: Экспертный аналитический стиль
-   - informative: Информативный стиль
-   - concrete: Конкретный стиль с примерами
+1. **Tone**
+   - expert_analyst: Expert analytical style
+   - informative: Informative style
+   - concrete: Concrete style with examples
 
-2. **Структура**
-   - hook: Зацепка для привлечения внимания
-   - body: Основная часть с анализом
-   - conclusion: Заключение с призывом к действию
+2. **Structure**
+   - hook: Attention-grabbing hook
+   - body: Main analytical part
+   - conclusion: Conclusion with a call to action
 
-3. **Форматирование**
-   - Использование эмодзи для визуального разделения
-   - Структурированные списки
-   - Выделение ключевых метрик
+3. **Formatting**
+   - Use of emojis for visual separation
+   - Structured lists
+   - Highlighting key metrics
 
-## Хранение контента
+## Content Storage
 
-Платформа поддерживает два варианта хранения:
+The platform supports two storage options:
 
 1. **Excel**
-   - Локальное хранение
-   - Простая интеграция
-   - Подходит для небольших проектов
+   - Local storage
+   - Simple integration
+   - Suitable for small projects
 
 2. **Google Sheets**
-   - Облачное хранение
-   - Совместный доступ
-   - Подходит для командной работы
+   - Cloud storage
+   - Collaborative access
+   - Suitable for teams
 
-## Автоматизация
+## Automation
 
-### Планировщик
+### Scheduler
 
-Настройте автоматическую генерацию контента:
+Set up automatic content generation:
 
 ```bash
 python src/core/scheduler.py
 ```
 
-Время запуска настраивается в .env файле:
+Set the launch time in the .env file:
 ```
 SCHEDULER_TIME=09:00
 ```
 
-## Лучшие практики
+## Best Practices
 
-1. **Выбор статей**
-   - Фокусируйтесь на значимых раундах финансирования
-   - Выбирайте инновационные бизнес-модели
-   - Обращайте внимание на региональные особенности
+1. **Article Selection**
+   - Focus on significant funding rounds
+   - Choose innovative business models
+   - Pay attention to regional specifics
 
-2. **Оптимизация контента**
-   - Используйте релевантные хэштеги
-   - Добавляйте призывы к действию
-   - Включайте статистику и метрики
+2. **Content Optimization**
+   - Use relevant hashtags
+   - Add calls to action
+   - Include statistics and metrics
 
-3. **Анализ эффективности**
-   - Отслеживайте вовлеченность
-   - Анализируйте популярные темы
-   - Корректируйте стиль на основе обратной связи
+3. **Performance Analysis**
+   - Track engagement
+   - Analyze popular topics
+   - Adjust style based on feedback
 
-## Устранение неполадок
+## Troubleshooting
 
-1. **Проблемы с генерацией**
-   - Проверьте API ключ OpenAI
-   - Убедитесь в наличии интернет-соединения
-   - Проверьте логи в папке logs/
+1. **Generation Issues**
+   - Check your OpenAI API key
+   - Ensure you have an internet connection
+   - Check logs in the logs/ folder
 
-2. **Проблемы с хранением**
-   - Проверьте права доступа к файлам
-   - Убедитесь в правильности настроек Google Sheets
-   - Проверьте формат данных
+2. **Storage Issues**
+   - Check file access permissions
+   - Verify Google Sheets settings
+   - Check data format
 
-## Обновления
+## Updates
 
-Следите за обновлениями в CHANGELOG.md. Новые версии могут включать:
-- Улучшения в генерации контента
-- Новые шаблоны и стили
-- Оптимизацию производительности
-- Исправления ошибок 
+See CHANGELOG.md for updates. New versions may include:
+- Improved content generation
+- New templates and styles
+- Performance optimizations
+- Bug fixes 
