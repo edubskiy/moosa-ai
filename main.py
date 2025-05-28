@@ -1,77 +1,115 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
+import sys
 import logging
 import argparse
-from dotenv import load_dotenv
-from startup_news_scraper import MENABytesNewsScraper
-from content_generator import ContentGenerator
-from reel_generator import ReelGenerator
+from datetime import datetime
 
-# Load environment variables
-load_dotenv()
+# Добавляем корневую директорию проекта в PYTHONPATH
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Configure logging
+from src.core.scraper import MENABytesNewsScraper
+from src.core.generator import ContentGenerator
+from src.content.reel_generator import ReelGenerator
+from src.storage.excel_tracker import ExcelContentTracker
+from src.storage.google_sheets_tracker import GoogleSheetsTracker
+from src.utils.article_tracker import ArticleTracker
+
+# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("main.log"),
+        logging.FileHandler('logs/main.log'),
         logging.StreamHandler()
     ]
 )
 
 logger = logging.getLogger(__name__)
 
-def run_scraper():
-    """Run the news scraper"""
-    logger.info("Starting news scraper")
-    scraper = MENABytesNewsScraper()
-    scraper.run()
-    logger.info("News scraper completed")
+def setup_tracker(use_google_sheets=False):
+    """Инициализация трекера контента"""
+    if use_google_sheets:
+        return GoogleSheetsTracker()
+    return ExcelContentTracker()
 
-def run_content_generator():
-    """Run the content generator"""
-    logger.info("Starting content generator")
-    generator = ContentGenerator()
-    generator.run()
-    logger.info("Content generator completed")
+def process_article(article, platform, tracker, generator, reel_generator):
+    """Обработка одной статьи"""
+    try:
+        # Генерация контента
+        content = generator.generate(article, platform)
+        if content:
+            tracker.save_content(content)
+            logger.info(f"Сгенерирован контент для {platform}: {content.title}")
 
-def run_reel_generator():
-    """Run the Instagram reel script generator"""
-    logger.info("Starting reel generator")
-    generator = ReelGenerator()
-    generator.run()
-    logger.info("Reel generator completed")
+        # Генерация Reels
+        if platform == "instagram":
+            reel = reel_generator.generate(article)
+            if reel:
+                tracker.save_reel(reel)
+                logger.info(f"Сгенерирован скрипт для Reels: {reel.title}")
 
-def run_all():
-    """Run all components in sequence"""
-    logger.info("Running all components")
-    run_scraper()
-    run_content_generator()
-    run_reel_generator()
-    logger.info("All components completed")
+        return True
+    except Exception as e:
+        logger.error(f"Ошибка при обработке статьи {article.id}: {str(e)}")
+        return False
 
 def main():
-    """Main function with command line arguments"""
-    parser = argparse.ArgumentParser(description='Startup Content Creation System')
-    parser.add_argument('--scrape', action='store_true', help='Run only the news scraper')
-    parser.add_argument('--content', action='store_true', help='Run only the content generator')
-    parser.add_argument('--reel', action='store_true', help='Run only the Instagram reel generator')
-    
+    parser = argparse.ArgumentParser(description='Startup Content Creator')
+    parser.add_argument('--platform', choices=['telegram', 'linkedin', 'instagram'], 
+                      help='Платформа для генерации контента')
+    parser.add_argument('--article-id', help='ID статьи для обработки')
+    parser.add_argument('--generate-reel', action='store_true', 
+                      help='Генерация скрипта для Instagram Reels')
+    parser.add_argument('--google-sheets', action='store_true',
+                      help='Использовать Google Sheets вместо Excel')
     args = parser.parse_args()
-    
-    # Check if OpenAI API key is set
-    if not os.getenv("OPENAI_API_KEY"):
-        logger.warning("OpenAI API key not found. Set OPENAI_API_KEY environment variable for AI-powered content generation.")
-    
-    # Run the selected components or all if none specified
-    if args.scrape:
-        run_scraper()
-    elif args.content:
-        run_content_generator()
-    elif args.reel:
-        run_reel_generator()
-    else:
-        run_all()
+
+    try:
+        # Инициализация компонентов
+        scraper = MENABytesNewsScraper()
+        generator = ContentGenerator()
+        reel_generator = ReelGenerator()
+        tracker = setup_tracker(args.google_sheets)
+        article_tracker = ArticleTracker()
+
+        # Получение статей
+        if args.article_id:
+            articles = [tracker.get_article(args.article_id)]
+        else:
+            articles = scraper.run()
+
+        # Обработка статей
+        for article in articles:
+            if article_tracker.is_processed(article.id):
+                logger.info(f"Статья {article.id} уже обработана")
+                continue
+
+            if args.platform:
+                # Обработка для конкретной платформы
+                if process_article(article, args.platform, tracker, generator, reel_generator):
+                    article_tracker.mark_as_processed(article.id)
+            elif args.generate_reel:
+                # Генерация только Reels
+                reel = reel_generator.generate(article)
+                if reel:
+                    tracker.save_reel(reel)
+                    article_tracker.mark_as_processed(article.id)
+                    logger.info(f"Сгенерирован скрипт для Reels: {reel.title}")
+            else:
+                # Обработка для всех платформ
+                platforms = ['telegram', 'linkedin', 'instagram']
+                for platform in platforms:
+                    if process_article(article, platform, tracker, generator, reel_generator):
+                        article_tracker.mark_as_processed(article.id)
+
+        logger.info("Обработка завершена успешно")
+
+    except Exception as e:
+        logger.error(f"Произошла ошибка: {str(e)}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 

@@ -1,4 +1,4 @@
-# MOOSA AI
+# Content Creator Platform
 
 Платформа для автоматизированного создания контента о стартапах в стиле Евгения Дубского.
 
@@ -15,7 +15,7 @@
 ## Структура проекта
 
 ```
-moosa-ai/
+content-creator/
 ├── src/                    # Исходный код
 │   ├── core/              # Основные компоненты
 │   ├── storage/           # Системы хранения
@@ -36,8 +36,8 @@ moosa-ai/
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/edubskiy/moosa-ai.git
-cd moosa-ai
+git clone https://github.com/yourusername/content-creator.git
+cd content-creator
 ```
 
 2. Создайте виртуальное окружение:

@@ -1,0 +1,319 @@
+2025-05-08 14:09:23,121 - __main__ - WARNING - OpenAI API key not found. Set OPENAI_API_KEY environment variable for AI-powered content generation.
+2025-05-08 14:09:23,121 - __main__ - INFO - Starting news scraper
+2025-05-08 14:09:23,121 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-08 14:09:23,500 - startup_news_scraper - ERROR - Error fetching https://www.menabytes.com: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-05-08 14:09:23,500 - startup_news_scraper - ERROR - Failed to fetch homepage
+2025-05-08 14:09:23,500 - __main__ - INFO - News scraper completed
+2025-05-08 14:11:25,400 - __main__ - WARNING - OpenAI API key not found. Set OPENAI_API_KEY environment variable for AI-powered content generation.
+2025-05-08 14:11:25,400 - __main__ - INFO - Starting content generator
+2025-05-08 14:11:25,400 - content_generator - WARNING - OpenAI API key not found. Please set OPENAI_API_KEY environment variable.
+2025-05-08 14:11:25,400 - content_generator - INFO - Starting content generation
+2025-05-08 14:11:25,400 - content_generator - INFO - Loaded 2 articles from data/articles_2025-05-08.json
+2025-05-08 14:11:25,400 - content_generator - INFO - Selected best article: Dubai's Lune raises $1.5 million seed to supercharge financial apps with data enrichment and money management tools
+2025-05-08 14:11:25,400 - content_generator - ERROR - OpenAI API key not set
+2025-05-08 14:11:25,400 - content_generator - INFO - Generating content without AI
+2025-05-08 14:11:25,400 - content_generator - INFO - Content saved to output/2025-05-08_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:11:25,400 - content_generator - INFO - Content generation completed successfully. Output saved to output/2025-05-08_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:11:25,400 - __main__ - INFO - Content generator completed
+2025-05-08 14:12:44,111 - __main__ - WARNING - OpenAI API key not found. Set OPENAI_API_KEY environment variable for AI-powered content generation.
+2025-05-08 14:12:44,111 - __main__ - INFO - Starting reel generator
+2025-05-08 14:12:44,111 - reel_generator - WARNING - OpenAI API key not found. Please set OPENAI_API_KEY environment variable.
+2025-05-08 14:12:44,111 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-08 14:12:44,111 - reel_generator - INFO - Loaded 2 articles from data/articles_2025-05-08.json
+2025-05-08 14:12:44,111 - reel_generator - ERROR - OpenAI API key not set
+2025-05-08 14:12:44,111 - reel_generator - INFO - Generating reel script without AI
+2025-05-08 14:12:44,111 - reel_generator - INFO - Reel script saved to output/reels/2025-05-08_reel_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:12:44,111 - reel_generator - INFO - Reel script generation completed successfully. Output saved to output/reels/2025-05-08_reel_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:12:44,111 - __main__ - INFO - Reel generator completed
+2025-05-08 14:13:43,052 - __main__ - WARNING - OpenAI API key not found. Set OPENAI_API_KEY environment variable for AI-powered content generation.
+2025-05-08 14:13:43,052 - __main__ - INFO - Running all components
+2025-05-08 14:13:43,052 - __main__ - INFO - Starting news scraper
+2025-05-08 14:13:43,052 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-08 14:13:43,277 - startup_news_scraper - ERROR - Error fetching https://www.menabytes.com: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-05-08 14:13:43,277 - startup_news_scraper - ERROR - Failed to fetch homepage
+2025-05-08 14:13:43,277 - __main__ - INFO - News scraper completed
+2025-05-08 14:13:43,278 - __main__ - INFO - Starting content generator
+2025-05-08 14:13:43,278 - content_generator - WARNING - OpenAI API key not found. Please set OPENAI_API_KEY environment variable.
+2025-05-08 14:13:43,278 - content_generator - INFO - Starting content generation
+2025-05-08 14:13:43,279 - content_generator - INFO - Loaded 2 articles from data/articles_2025-05-08.json
+2025-05-08 14:13:43,279 - content_generator - INFO - Selected best article: Dubai's Lune raises $1.5 million seed to supercharge financial apps with data enrichment and money management tools
+2025-05-08 14:13:43,279 - content_generator - ERROR - OpenAI API key not set
+2025-05-08 14:13:43,279 - content_generator - INFO - Generating content without AI
+2025-05-08 14:13:43,279 - content_generator - INFO - Content saved to output/2025-05-08_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:13:43,279 - content_generator - INFO - Content generation completed successfully. Output saved to output/2025-05-08_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:13:43,279 - __main__ - INFO - Content generator completed
+2025-05-08 14:13:43,279 - __main__ - INFO - Starting reel generator
+2025-05-08 14:13:43,279 - reel_generator - WARNING - OpenAI API key not found. Please set OPENAI_API_KEY environment variable.
+2025-05-08 14:13:43,279 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-08 14:13:43,279 - reel_generator - INFO - Loaded 2 articles from data/articles_2025-05-08.json
+2025-05-08 14:13:43,279 - reel_generator - ERROR - OpenAI API key not set
+2025-05-08 14:13:43,279 - reel_generator - INFO - Generating reel script without AI
+2025-05-08 14:13:43,280 - reel_generator - INFO - Reel script saved to output/reels/2025-05-08_reel_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:13:43,280 - reel_generator - INFO - Reel script generation completed successfully. Output saved to output/reels/2025-05-08_reel_Dubai_s Lune raises _1_5 million seed to superchar.md
+2025-05-08 14:13:43,280 - __main__ - INFO - Reel generator completed
+2025-05-08 14:13:43,280 - __main__ - INFO - All components completed
+2025-05-08 14:55:35,822 - __main__ - INFO - Starting news scraper
+2025-05-08 14:55:35,822 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-08 14:55:36,063 - startup_news_scraper - ERROR - Error fetching https://www.menabytes.com: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-05-08 14:55:36,063 - startup_news_scraper - ERROR - Failed to fetch homepage
+2025-05-08 14:55:36,063 - __main__ - INFO - News scraper completed
+2025-05-08 14:56:48,692 - __main__ - INFO - Starting news scraper
+2025-05-08 14:56:48,692 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-08 14:56:50,190 - startup_news_scraper - ERROR - Error fetching https://www.menabytes.com: HTTPSConnectionPool(host='www.menabytes.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:2648)')))
+2025-05-08 14:56:50,190 - startup_news_scraper - ERROR - Failed to fetch homepage
+2025-05-08 14:56:50,191 - __main__ - INFO - News scraper completed
+2025-05-08 14:58:56,955 - __main__ - INFO - Starting news scraper
+2025-05-08 14:58:56,955 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-08 14:58:59,153 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-08 14:58:59,153 - startup_news_scraper - INFO - No articles to save
+2025-05-08 14:58:59,153 - startup_news_scraper - INFO - Scraping completed
+2025-05-08 14:58:59,153 - __main__ - INFO - News scraper completed
+2025-05-08 14:59:10,890 - __main__ - INFO - Starting content generator
+2025-05-08 14:59:10,890 - content_generator - INFO - Starting content generation
+2025-05-08 14:59:10,890 - content_generator - INFO - Loaded 3 articles from data/articles_2025-05-08.json
+2025-05-08 14:59:10,890 - content_generator - INFO - Selected best article: Saudi fintech startup Payflow raises $9.1 million Series A to provide early wage access to employees
+2025-05-08 14:59:10,890 - content_generator - INFO - Article info saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /article_info.json
+2025-05-08 14:59:10,890 - content_generator - ERROR - Error generating Russian content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-08 14:59:10,890 - content_generator - INFO - Generating Russian content without AI
+2025-05-08 14:59:10,890 - content_generator - INFO - Content saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /russian.md
+2025-05-08 14:59:10,890 - content_generator - ERROR - Error generating English content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-08 14:59:10,890 - content_generator - INFO - Generating English content without AI
+2025-05-08 14:59:10,891 - content_generator - INFO - Content saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /english.md
+2025-05-08 14:59:10,891 - content_generator - INFO - Content generation completed successfully for article: Saudi fintech startup Payflow raises $9.1 million Series A to provide early wage access to employees
+2025-05-08 14:59:10,891 - content_generator - INFO - Russian content saved to: output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /russian.md
+2025-05-08 14:59:10,891 - content_generator - INFO - English content saved to: output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /english.md
+2025-05-08 14:59:10,891 - __main__ - INFO - Content generator completed
+2025-05-08 15:02:05,746 - __main__ - INFO - Starting reel generator
+2025-05-08 15:02:05,746 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-08 15:02:05,746 - reel_generator - INFO - Loaded 3 articles from data/articles_2025-05-08.json
+2025-05-08 15:02:05,746 - reel_generator - ERROR - Error generating reel script with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-08 15:02:05,746 - reel_generator - INFO - Generating reel script without AI
+2025-05-08 17:28:36,760 - __main__ - INFO - Starting content generator
+2025-05-08 17:28:36,760 - content_generator - INFO - Starting content generation
+2025-05-08 17:28:36,760 - content_generator - INFO - Loaded 3 articles from data/articles_2025-05-08.json
+2025-05-08 17:28:36,760 - content_generator - INFO - Selected best article: Saudi fintech startup Payflow raises $9.1 million Series A to provide early wage access to employees
+2025-05-08 17:28:36,761 - content_generator - INFO - Article info saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /article_info.json
+2025-05-08 17:28:36,761 - content_generator - ERROR - Error generating Russian content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-08 17:28:36,761 - content_generator - INFO - Generating Russian content without AI
+2025-05-08 17:28:36,761 - content_generator - INFO - Content saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /russian.md
+2025-05-08 17:28:36,761 - content_generator - ERROR - Error generating English content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-08 17:28:36,761 - content_generator - INFO - Generating English content without AI
+2025-05-08 17:28:36,761 - content_generator - INFO - Content saved to output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /english.md
+2025-05-08 17:28:36,761 - content_generator - INFO - Content generation completed successfully for article: Saudi fintech startup Payflow raises $9.1 million Series A to provide early wage access to employees
+2025-05-08 17:28:36,762 - content_generator - INFO - Russian content saved to: output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /russian.md
+2025-05-08 17:28:36,762 - content_generator - INFO - English content saved to: output/2025-05-08_Saudi fintech startup Payflow raises _9_1 million /english.md
+2025-05-08 17:28:36,762 - __main__ - INFO - Content generator completed
+2025-05-14 19:30:54,754 - __main__ - INFO - Running all components
+2025-05-14 19:30:54,755 - __main__ - INFO - Starting news scraper
+2025-05-14 19:30:54,755 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-14 19:30:57,359 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-14 19:30:57,359 - startup_news_scraper - INFO - No articles to save
+2025-05-14 19:30:57,360 - startup_news_scraper - INFO - Scraping completed
+2025-05-14 19:30:57,360 - __main__ - INFO - News scraper completed
+2025-05-14 19:30:57,360 - __main__ - INFO - Starting content generator
+2025-05-14 19:30:57,360 - content_generator - INFO - Starting content generation
+2025-05-14 19:30:57,360 - content_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:30:57,360 - content_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:30:57,360 - content_generator - INFO - Checking for file: data/articles_2025-05-14.json
+2025-05-14 19:30:57,360 - content_generator - INFO - Loaded 2 articles from data/articles_2025-05-14.json
+2025-05-14 19:30:57,360 - article_tracker - INFO - Article already processed: UAE's Edutech startup LearnHub secures $7.5 million to expand its AI-powered learning platform
+2025-05-14 19:30:57,361 - article_tracker - INFO - Article already processed: Morocco's Agritech startup FarmTech raises $4.2 million to modernize small-scale farming
+2025-05-14 19:30:57,361 - content_generator - WARNING - All articles have already been processed
+2025-05-14 19:30:57,361 - content_generator - ERROR - Could not select a suitable article
+2025-05-14 19:30:57,361 - __main__ - INFO - Content generator completed
+2025-05-14 19:30:57,361 - __main__ - INFO - Starting reel generator
+2025-05-14 19:30:57,361 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-14 19:30:57,361 - reel_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:30:57,361 - reel_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:30:57,361 - reel_generator - INFO - Checking for file: data/articles_2025-05-14.json
+2025-05-14 19:30:57,361 - reel_generator - INFO - Loaded 2 articles from data/articles_2025-05-14.json
+2025-05-14 19:30:57,361 - article_tracker - INFO - Article already processed: UAE's Edutech startup LearnHub secures $7.5 million to expand its AI-powered learning platform
+2025-05-14 19:30:57,361 - article_tracker - INFO - Article already processed: Morocco's Agritech startup FarmTech raises $4.2 million to modernize small-scale farming
+2025-05-14 19:30:57,361 - reel_generator - WARNING - All articles have already been processed
+2025-05-14 19:30:57,361 - __main__ - INFO - Reel generator completed
+2025-05-14 19:30:57,361 - __main__ - INFO - All components completed
+2025-05-14 19:32:15,885 - __main__ - INFO - Running all components
+2025-05-14 19:32:15,885 - __main__ - INFO - Starting news scraper
+2025-05-14 19:32:15,885 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-14 19:32:17,726 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-14 19:32:17,726 - startup_news_scraper - INFO - No articles to save
+2025-05-14 19:32:17,726 - startup_news_scraper - INFO - Scraping completed
+2025-05-14 19:32:17,726 - __main__ - INFO - News scraper completed
+2025-05-14 19:32:17,726 - __main__ - INFO - Starting content generator
+2025-05-14 19:32:17,727 - content_generator - INFO - Starting content generation
+2025-05-14 19:32:17,727 - content_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:32:17,727 - content_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:32:17,727 - content_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:32:17,727 - article_tracker - INFO - Article not processed yet: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:32:17,727 - content_generator - INFO - Selected best article: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:32:17,728 - content_generator - INFO - Article info saved to output/2025-05-14_Dubai_s HealthTech startup MediConnect raises _6 m/article_info.json
+2025-05-14 19:32:17,728 - content_generator - ERROR - Error generating Russian content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-14 19:32:17,728 - content_generator - INFO - Generating Russian content without AI
+2025-05-14 19:32:17,729 - content_generator - INFO - Content saved to output/2025-05-14_Dubai_s HealthTech startup MediConnect raises _6 m/russian.md
+2025-05-14 19:32:17,729 - content_generator - ERROR - Error generating English content with AI: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-05-14 19:32:17,729 - content_generator - INFO - Generating English content without AI
+2025-05-14 19:32:17,730 - content_generator - INFO - Content saved to output/2025-05-14_Dubai_s HealthTech startup MediConnect raises _6 m/english.md
+2025-05-14 19:32:17,730 - content_generator - INFO - Content generation completed successfully for article: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:32:17,730 - content_generator - INFO - Russian content saved to: output/2025-05-14_Dubai_s HealthTech startup MediConnect raises _6 m/russian.md
+2025-05-14 19:32:17,730 - content_generator - INFO - English content saved to: output/2025-05-14_Dubai_s HealthTech startup MediConnect raises _6 m/english.md
+2025-05-14 19:32:17,731 - article_tracker - INFO - Article database saved to data/processed_articles.json
+2025-05-14 19:32:17,731 - article_tracker - INFO - Article marked as processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:32:17,731 - __main__ - INFO - Content generator completed
+2025-05-14 19:32:17,731 - __main__ - INFO - Starting reel generator
+2025-05-14 19:32:17,731 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-14 19:32:17,731 - reel_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:32:17,731 - reel_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:32:17,732 - reel_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:32:17,732 - article_tracker - INFO - Article already processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:32:17,732 - reel_generator - WARNING - All articles have already been processed
+2025-05-14 19:32:17,732 - __main__ - INFO - Reel generator completed
+2025-05-14 19:32:17,732 - __main__ - INFO - All components completed
+2025-05-14 19:35:04,893 - __main__ - INFO - Running all components
+2025-05-14 19:35:04,893 - __main__ - INFO - Starting news scraper
+2025-05-14 19:35:04,893 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-14 19:35:07,917 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-14 19:35:07,917 - startup_news_scraper - INFO - No articles to save
+2025-05-14 19:35:07,917 - startup_news_scraper - INFO - Scraping completed
+2025-05-14 19:35:07,917 - __main__ - INFO - News scraper completed
+2025-05-14 19:35:07,917 - __main__ - INFO - Starting content generator
+2025-05-14 19:35:07,949 - content_generator - INFO - Starting content generation
+2025-05-14 19:35:07,949 - content_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:35:07,950 - content_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:35:07,950 - content_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:35:07,950 - article_tracker - INFO - Article already processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:35:07,950 - content_generator - WARNING - All articles have already been processed
+2025-05-14 19:35:07,950 - content_generator - ERROR - Could not select a suitable article
+2025-05-14 19:35:07,951 - __main__ - INFO - Content generator completed
+2025-05-14 19:35:07,951 - __main__ - INFO - Starting reel generator
+2025-05-14 19:35:07,958 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-14 19:35:07,958 - reel_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:35:07,958 - reel_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:35:07,958 - reel_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:35:07,958 - article_tracker - INFO - Article already processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:35:07,959 - reel_generator - WARNING - All articles have already been processed
+2025-05-14 19:35:07,959 - __main__ - INFO - Reel generator completed
+2025-05-14 19:35:07,959 - __main__ - INFO - All components completed
+2025-05-14 19:35:54,876 - __main__ - INFO - Running all components
+2025-05-14 19:35:54,876 - __main__ - INFO - Starting news scraper
+2025-05-14 19:35:54,876 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-14 19:35:57,815 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-14 19:35:57,815 - startup_news_scraper - INFO - No articles to save
+2025-05-14 19:35:57,815 - startup_news_scraper - INFO - Scraping completed
+2025-05-14 19:35:57,815 - __main__ - INFO - News scraper completed
+2025-05-14 19:35:57,815 - __main__ - INFO - Starting content generator
+2025-05-14 19:35:57,840 - content_generator - INFO - Starting content generation
+2025-05-14 19:35:57,840 - content_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:35:57,840 - content_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:35:57,841 - content_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:35:57,841 - article_tracker - INFO - Article already processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:35:57,841 - content_generator - WARNING - All articles have already been processed
+2025-05-14 19:35:57,841 - content_generator - ERROR - Could not select a suitable article
+2025-05-14 19:35:57,841 - __main__ - INFO - Content generator completed
+2025-05-14 19:35:57,841 - __main__ - INFO - Starting reel generator
+2025-05-14 19:35:57,849 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-14 19:35:57,849 - reel_generator - INFO - Looking for articles with dates: today=2025-05-14, tomorrow=2025-05-15
+2025-05-14 19:35:57,849 - reel_generator - INFO - Test mode: Checking for tomorrow's file first: data/articles_2025-05-15.json
+2025-05-14 19:35:57,849 - reel_generator - INFO - Loaded 1 articles from data/articles_2025-05-15.json
+2025-05-14 19:35:57,849 - article_tracker - INFO - Article already processed: Dubai's HealthTech startup MediConnect raises $6 million to revolutionize telemedicine in MENA
+2025-05-14 19:35:57,849 - reel_generator - WARNING - All articles have already been processed
+2025-05-14 19:35:57,849 - __main__ - INFO - Reel generator completed
+2025-05-14 19:35:57,849 - __main__ - INFO - All components completed
+2025-05-14 19:38:59,824 - __main__ - INFO - Using test file: data/articles_2025-05-16.json
+2025-05-14 19:38:59,824 - __main__ - INFO - Running all components
+2025-05-14 19:38:59,824 - __main__ - INFO - Starting news scraper
+2025-05-14 19:38:59,824 - startup_news_scraper - INFO - Starting MENABytes news scraper
+2025-05-14 19:39:02,271 - startup_news_scraper - INFO - Found 0 articles on homepage
+2025-05-14 19:39:02,272 - startup_news_scraper - INFO - No articles to save
+2025-05-14 19:39:02,272 - startup_news_scraper - INFO - Scraping completed
+2025-05-14 19:39:02,272 - __main__ - INFO - News scraper completed
+2025-05-14 19:39:02,272 - __main__ - INFO - Starting content generator
+2025-05-14 19:39:02,295 - content_generator - INFO - Starting content generation
+2025-05-14 19:39:02,295 - content_generator - INFO - Using test file: data/articles_2025-05-16.json
+2025-05-14 19:39:02,296 - content_generator - INFO - Loaded 1 articles from test file data/articles_2025-05-16.json
+2025-05-14 19:39:02,296 - article_tracker - INFO - Article not processed yet: Egyptian Fintech startup PayMaster secures $3.5 million to expand digital payment solutions
+2025-05-14 19:39:02,296 - content_generator - INFO - Selected best article: Egyptian Fintech startup PayMaster secures $3.5 million to expand digital payment solutions
+2025-05-14 19:39:02,296 - content_generator - INFO - Article info saved to output/2025-05-14_Egyptian Fintech startup PayMaster secures _3_5 mi/article_info.json
+2025-05-14 19:39:02,296 - content_generator - ERROR - Error generating Russian content with AI: '<=' not supported between instances of 'int' and 'str'
+2025-05-14 19:39:02,296 - content_generator - INFO - Generating Russian content without AI
+2025-05-14 19:39:02,296 - content_generator - INFO - Content saved to output/2025-05-14_Egyptian Fintech startup PayMaster secures _3_5 mi/russian.md
+2025-05-14 19:39:02,296 - content_generator - ERROR - Error generating English content with AI: '<=' not supported between instances of 'int' and 'str'
+2025-05-14 19:39:02,296 - content_generator - INFO - Generating English content without AI
+2025-05-14 19:39:02,296 - content_generator - INFO - Content saved to output/2025-05-14_Egyptian Fintech startup PayMaster secures _3_5 mi/english.md
+2025-05-14 19:39:02,297 - article_tracker - INFO - Article database saved to data/processed_articles.json
+2025-05-14 19:39:02,297 - article_tracker - INFO - Article marked as processed: Egyptian Fintech startup PayMaster secures $3.5 million to expand digital payment solutions
+2025-05-14 19:39:02,297 - content_generator - INFO - Content generation completed successfully for article: Egyptian Fintech startup PayMaster secures $3.5 million to expand digital payment solutions
+2025-05-14 19:39:02,297 - content_generator - INFO - Russian content saved to: output/2025-05-14_Egyptian Fintech startup PayMaster secures _3_5 mi/russian.md
+2025-05-14 19:39:02,297 - content_generator - INFO - English content saved to: output/2025-05-14_Egyptian Fintech startup PayMaster secures _3_5 mi/english.md
+2025-05-14 19:39:02,297 - __main__ - INFO - Content generator completed
+2025-05-14 19:39:02,297 - __main__ - INFO - Starting reel generator
+2025-05-14 19:39:02,303 - reel_generator - INFO - Starting Instagram reel script generation
+2025-05-14 19:39:02,303 - reel_generator - INFO - Using test file: data/articles_2025-05-16.json
+2025-05-14 19:39:02,303 - reel_generator - INFO - Loaded 1 articles from test file data/articles_2025-05-16.json
+2025-05-14 19:39:02,303 - article_tracker - INFO - Article already processed: Egyptian Fintech startup PayMaster secures $3.5 million to expand digital payment solutions
+2025-05-14 19:39:02,303 - reel_generator - WARNING - All articles have already been processed
+2025-05-14 19:39:02,303 - reel_generator - ERROR - Could not select a suitable article
+2025-05-14 19:39:02,303 - __main__ - INFO - Reel generator completed
+2025-05-14 19:39:02,303 - __main__ - INFO - All components completed

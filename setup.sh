@@ -1,40 +1,70 @@
 #!/bin/bash
 
-# Startup Content Creator Setup Script
-echo "Setting up Startup Content Creator..."
+# Цвета для вывода
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
 
-# Create virtual environment
-echo "Creating virtual environment..."
-python3 -m venv venv
+echo -e "${GREEN}Настройка MOOSA AI...${NC}"
 
-# Activate virtual environment
-echo "Activating virtual environment..."
-source venv/bin/activate
-
-# Install dependencies
-echo "Installing dependencies..."
-pip install -r requirements.txt
-
-# Create necessary directories
-echo "Creating necessary directories..."
-mkdir -p data output/reels
-
-# Create .env file if it doesn't exist
-if [ ! -f .env ]; then
-    echo "Creating .env file..."
-    cat > .env << EOL
-# API ключ для OpenAI (необходим для генерации контента с использованием AI)
-OPENAI_API_KEY=your_openai_api_key_here
-
-# Настройки планировщика (время запуска в формате HH:MM)
-SCHEDULER_TIME=09:00
-EOL
-    echo "Please edit the .env file and add your OpenAI API key."
+# Проверка наличия Python
+if ! command -v python3 &> /dev/null; then
+    echo -e "${RED}Python 3 не установлен. Пожалуйста, установите Python 3.${NC}"
+    exit 1
 fi
 
-echo "Setup completed successfully!"
-echo "To start using the system, run:"
-echo "source venv/bin/activate && python main.py"
-echo ""
-echo "To schedule daily runs, use:"
-echo "source venv/bin/activate && python scheduler.py" 
+# Создание виртуального окружения
+echo -e "${YELLOW}Создание виртуального окружения...${NC}"
+python3 -m venv python_env
+
+# Активация виртуального окружения
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    source python_env/Scripts/activate
+else
+    source python_env/bin/activate
+fi
+
+# Установка зависимостей
+echo -e "${YELLOW}Установка зависимостей...${NC}"
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Создание необходимых директорий
+echo -e "${YELLOW}Создание директорий...${NC}"
+mkdir -p data media output logs
+
+# Копирование конфигурационных файлов
+echo -e "${YELLOW}Настройка конфигурации...${NC}"
+if [ ! -f .env ]; then
+    cp config/.env.example .env
+    echo -e "${GREEN}Создан файл .env. Пожалуйста, отредактируйте его, добавив необходимые переменные окружения.${NC}"
+fi
+
+# Проверка наличия Google Sheets credentials
+if [ ! -f config/credentials.json ]; then
+    if [ -f config/credentials.json.example ]; then
+        cp config/credentials.json.example config/credentials.json
+        echo -e "${YELLOW}Создан файл credentials.json. Пожалуйста, замените его на ваши учетные данные Google Sheets.${NC}"
+    else
+        echo -e "${YELLOW}Файл credentials.json.example не найден. Пожалуйста, добавьте ваши учетные данные Google Sheets в config/credentials.json${NC}"
+    fi
+fi
+
+# Проверка наличия OpenAI API ключа
+if ! grep -q "OPENAI_API_KEY" .env; then
+    echo -e "${YELLOW}ВНИМАНИЕ: OPENAI_API_KEY не найден в .env файле. Добавьте его для использования AI-powered генерации контента.${NC}"
+fi
+
+# Установка прав на выполнение
+chmod +x main.py
+chmod +x scripts/*.py
+
+echo -e "${GREEN}Настройка завершена!${NC}"
+echo -e "${YELLOW}Для начала работы:${NC}"
+echo "1. Активируйте виртуальное окружение:"
+echo "   source python_env/bin/activate  # Linux/Mac"
+echo "   python_env\\Scripts\\activate  # Windows"
+echo "2. Запустите основной скрипт:"
+echo "   python main.py"
+echo -e "${YELLOW}Для получения дополнительной информации, обратитесь к документации в docs/ директории.${NC}" 

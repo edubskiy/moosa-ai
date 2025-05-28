@@ -4,6 +4,12 @@ import json
 import os
 from datetime import datetime
 import logging
+import time
+import random
+import urllib3
+
+# Disable SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configure logging
 logging.basicConfig(
@@ -23,7 +29,17 @@ class MENABytesNewsScraper:
     def __init__(self):
         self.base_url = "https://www.menabytes.com"
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Cache-Control': 'max-age=0'
         }
         self.data_dir = "data"
         os.makedirs(self.data_dir, exist_ok=True)
@@ -31,7 +47,22 @@ class MENABytesNewsScraper:
     def fetch_page(self, url):
         """Fetch HTML content from a URL"""
         try:
-            response = requests.get(url, headers=self.headers)
+            # Add a random delay to mimic human behavior
+            time.sleep(random.uniform(1, 3))
+            
+            # Create a session to maintain cookies
+            session = requests.Session()
+            
+            # First make a HEAD request to get cookies
+            session.head(url, headers=self.headers)
+            
+            # Then make the actual GET request
+            response = session.get(
+                url, 
+                headers=self.headers,
+                timeout=30,
+                verify=False  # Disable SSL verification
+            )
             response.raise_for_status()
             return response.text
         except requests.RequestException as e:
